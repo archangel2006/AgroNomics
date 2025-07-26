@@ -8,6 +8,8 @@ A web-based machine learning application that predicts crop prices to help farme
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-red)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![License](https://img.shields.io/badge/license-Proprietary-red)
+
 
 ## 🎯 Problem Statement
 
@@ -73,11 +75,33 @@ Season
 
 ## 🚀 Installation & Setup
 
-### Prerequisites
-- Python 3.11+ 
-- pip package manager
+### Prerequisites:
+- Python 3.11+
+- `pip` (Python package installer)
+
+### Steps:
+```bash
+git clone https://github.com/yourusername/agronomics.git
+cd agronomics
+pip install -r requirements.txt
+python app.py
+
+Access the app at http://127.0.0.1:5000 in your browser.
 
 ## 📁 Project Structure
+AgroNomics/
+│
+├── app.py
+├── model.pkl
+├── encoder.pkl
+├── requirements.txt
+├── templates/
+│   ├── index.html
+│   └── result.html
+├── static/
+│   ├── css/
+│   └── js/
+└── README.md
 
 ## 🎮 Usage
 
@@ -96,10 +120,10 @@ Season
 ## 🧠 Model Details
 
 - **Algorithm**: Random Forest Regression with fallback prediction system
-- **Features**: State, District, Commodity, Category, Month, Season
-- **Encoding**: One-Hot Encoding for categorical variables
+- **Features**: Category, Crop, State, District, Month, Season
+- **Encoding**: Ordinal Encoding for categorical variables
 - **Fallback System**: Rule-based predictions when ML models unavailable
-- **Accuracy**: Optimized for Indian agricultural patterns
+- **Accuracy**:  ~88% on cleaned dataset (~40k entries)
 
 ## 📈 Market Impact
 
@@ -117,21 +141,12 @@ Season
 ## 🔧 Troubleshooting
 
 ### Common Issues
-
 **Model Loading Error**
-
 **Missing Templates**
 - Ensure all HTML files are in the `templates/` directory
-
 **Port Already in Use**
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/enhancement`)
-3. Commit changes (`git commit -am 'Add new feature'`)
-4. Push to branch (`git push origin feature/enhancement`)
-5. Create Pull Request
 
 ## 📄 License
 
