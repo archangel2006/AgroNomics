@@ -75,18 +75,7 @@ Season
 
 ## 🚀 Installation & Setup
 
-### Prerequisites:
-- Python 3.11+
-- `pip` (Python package installer)
 
-### Steps:
-```bash
-git clone https://github.com/yourusername/agronomics.git
-cd agronomics
-pip install -r requirements.txt
-python app.py
-
-Access the app at http://127.0.0.1:5000 in your browser.
 
 ## 📁 Project Structure
 AgroNomics/
@@ -150,11 +139,6 @@ AgroNomics/
 - Ensure all HTML files are in the `templates/` directory
 **Port Already in Use**
 
-
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👥 Team Celebi
 
