@@ -81,19 +81,34 @@ Season
 
 
 ## 📁 Project Structure
-AgroNomics/
-│
-├── app.py
-├── model.pkl
-├── encoder.pkl
-├── requirements.txt
-├── templates/
-│   ├── index.html
-│   └── result.html
-├── static/
-│   ├── css/
-│   └── js/
-└── README.md
+.
+└── AgroNomics/
+    ├── assets/
+    │   ├── agridata.csv   # (original dataset from Kaggle)
+    │   ├── cleaned_agridata.csv   # (cleaned dataset for model building)
+    │   └── crops.docx
+    ├── sample_models #(rough models built)/
+    │   ├── model1
+    │   ├── model2
+    │   ├── model3
+    │   └── delete.py 
+    ├── static   # (frontend styling & logic)/
+    │   ├── css/
+    │   │   └── style.css
+    │   └── js/
+    │       └── script.js
+    ├── templates  # (frontend structure)/
+    │   ├── about.html
+    │   ├── copyright.html
+    │   ├── home.html
+    │   └── result.html
+    ├── requirements.txt
+    ├── AgroNomics.ipynb  # (final model code)
+    ├── model.plk      # (final model)
+    ├── encoding.plk   # (encoding for model)
+    ├── app.py         # (Flask API)
+    ├── LICENSE
+    └── README.md
 
 ## 🎮 Usage
 
