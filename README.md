@@ -23,17 +23,18 @@ AgroNomics is a web-based machine learning platform that predicts upcoming crop 
 - **Nationwide Coverage**: Supports all 28 states, 8 union territories, and 700+ districts across India.
 - **Seasonal Intelligence**: Considers seasonal variations (Zaid, Kharif, Post-Monsoon, and Rabi) for precise predictions.
 
+
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **Python 3.13** | Core application logic & scripting |
-| **Pandas** | Data handling, aggregation & transformation |
-| **scikit-learn** | Machine learning models (Random Forest, Decision Trees) |
-| **Flask** | Web framework & REST API |
-| **NumPy** | Numerical computations |
-| **Joblib** | Model serialization |
-| **HTML/CSS/JS** | Frontend interface |
+| Technology       | Purpose                          |
+|------------------|----------------------------------|
+| **Python 3.13**  | Core logic & scripting           |
+| **Pandas, NumPy**| Data processing & computation    |
+| **scikit-learn** | ML models (Random Forest, DT)    |
+| **Flask**        | Web backend & REST API           |
+| **Joblib**       | Model serialization              |
+| **HTML/CSS/JS**  | Frontend interface               |
+
 
 ## 🏗️ System Architecture
 User Input → Flask Backend → ML Model → Price Prediction → Web Interface
