@@ -125,6 +125,10 @@ AgroNomics/
 - **Fallback System**: Rule-based predictions when ML models unavailable
 - **Accuracy**:  ~88% on cleaned dataset (~40k entries)
 
+<img width="341" height="148" alt="image" src="https://github.com/user-attachments/assets/9b7e8410-3903-498d-9d90-1db0df808567" />
+<img width="526" height="453" alt="image" src="https://github.com/user-attachments/assets/599efe3f-2da0-4482-abb9-fa417bcd93a6" />
+
+
 ## 📈 Market Impact
 
 ### Target Market Size
