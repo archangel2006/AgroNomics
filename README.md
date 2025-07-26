@@ -147,8 +147,8 @@ AgroNomics/
 
 | Name | Role | Contact |
 |------|------|---------|
-| **Vaibhavi Srivastava** | ML Developer | [LinkedIn](https://linkedin.com/in/vaibhavi-srivastava-99a572348) • [GitHub](https://github.com/archangel2006) |
-| **Sangini Garg** | Web Developer | [LinkedIn](https://linkedin.com/in/sangini-garg) • [GitHub](https://github.com/Sanginiux) |
+| **Vaibhavi Srivastava** | ML Developer |  [GitHub](https://github.com/archangel2006) |
+| **Sangini Garg** | Web Developer | [GitHub](https://github.com/Sanginiux) |
 
 
 
