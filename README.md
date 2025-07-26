@@ -35,19 +35,8 @@ AgroNomics is a web-based machine learning platform that predicts upcoming crop 
 | **Joblib**       | Model serialization              |
 | **HTML/CSS/JS**  | Frontend interface               |
 
-
-## 🏗️ System Architecture
-User Input → Flask Backend → ML Model → Price Prediction → Web Interface
-- **User Input**: State, District, Crop Category, Crop, Month, Season.
-- **Backend (Flask)**: Processes input and calls the ML model.
-- **ML Model (Random Forest)**: Predicts the crop price using trained data.
-- **Price Prediction**: Returns modal price per kilogram.
-- **Web Interface**: Displays the results in a clean and user-friendly manner. Print Result.
-
-## 🎮 Usage 
-1. Open the homepage.
-2. Select State, District, Crop Category, Crop, Month, and Season.
-3. Click "Predict Price" to view the estimated price (₹/kg).
+- **Dataset**: https://www.kaggle.com/datasets/syedjaferk/agriculture-commodity-data-2019
+- 
 
 ## 🚀 Installation & Setup
 
@@ -86,16 +75,33 @@ User Input → Flask Backend → ML Model → Price Prediction → Web Interface
     ├── LICENSE
     └── README.md
 
-## 🧠 Model Details
 
+## 🏗️ System Architecture
+User Input → Flask Backend → ML Model → Price Prediction → Web Interface
+- **User Input**: State, District, Crop Category, Crop, Month, Season.
+- **Backend (Flask)**: Processes input and calls the ML model.
+- **ML Model (Random Forest)**: Predicts the crop price using trained data.
+- **Price Prediction**: Returns modal price per kilogram.
+- **Web Interface**: Displays the results in a clean and user-friendly manner. Print Result.
+
+## 🎮 Usage 
+1. Open the homepage.
+2. Select State, District, Crop Category, Crop, Month, and Season.
+3. Click "Predict Price" to view the estimated price (₹/kg).
+
+   <img width="1920" height="1080" alt="photo-collage png (10)" src="https://github.com/user-attachments/assets/df427b9c-db99-443e-9728-7676f27a551d" />
+
+## 🧠 Model Details
+- **Dataset**: https://www.kaggle.com/datasets/syedjaferk/agriculture-commodity-data-2019
 - **Algorithm**: Random Forest Regression with fallback prediction system
 - **Features**: Category, Crop, State, District, Month, Season
 - **Encoding**: Ordinal Encoding for categorical variables
 - **Fallback System**: Rule-based predictions when ML models unavailable
 - **Accuracy**:  ~88% on cleaned dataset (~40k entries)
+- 
+- <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b867ce23-e230-4f34-9f8f-2395b6e5b14f" />
+<img width="1440" height="1080" alt="photo-collage png (9)" src="https://github.com/user-attachments/assets/b02ffce3-fd04-4c03-b7bb-b015c650fbbd" />
 
-<img width="341" height="148" alt="image" src="https://github.com/user-attachments/assets/9b7e8410-3903-498d-9d90-1db0df808567" />
-<img width="526" height="453" alt="image" src="https://github.com/user-attachments/assets/599efe3f-2da0-4482-abb9-fa417bcd93a6" />
 
 ## 📈 Market Impact
 - **AgriTech Growth**: $30.6B (2024) → $79.7B (2030) globally, with India projected to reach $24-30B by 2027 (~50% CAGR).
