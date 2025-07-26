@@ -11,46 +11,17 @@ A web-based machine learning application that predicts crop prices to help farme
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 
 
-## 🎯 Problem Statement
-
-- Farmers suffer significant losses due to unpredictable crop prices
-- Lack of forecasting tools tailored to local agriculture
-- Decisions based on guesswork instead of data-driven insights
-- Heavy dependency on middlemen for price information
+## 🎯 Problem 
+Farmers face significant financial losses due to unpredictable crop prices, lack of reliable forecasting tools, and decisions based on guesswork rather than data-driven insights.
 
 ## 💡 Solution
-
-AgroNomics provides a comprehensive web-based ML tool that:
-- Forecasts crop prices for upcoming periods
-- Uses historical datasets and regression models
-- Offers a simple, intuitive interface accessible to farmers
-- Covers multiple crop categories across Indian states
+AgroNomics is a web-based machine learning platform that predicts upcoming crop prices using historical datasets and advanced regression models. It provides a clean, intuitive interface designed for farmers, offering state and district-level insights across multiple crop categories in India.
 
 ## ✨ Key Features
-
-### 🔮 **Price Prediction**
-- Predicts crop prices based on location, season, and commodity type
-- Covers 9 major crop categories with 200+ commodities
-- State and district-wise predictions across India
-
-### 📊 **Comprehensive Database**
-- **Grains**: Wheat, Rice, Maize, Millets, Barley, etc.
-- **Pulses**: Arhar Dal, Masur Dal, Green Peas, etc.
-- **Vegetables**: Onion, Potato, Tomato, Cabbage, etc.
-- **Fruits**: Banana, Mango, Apple, Orange, etc.
-- **Spices**: Turmeric, Ginger, Garlic, Black Pepper, etc.
-- **Cash Crops**: Cotton, Sugarcane, Coffee, Tobacco, etc.
-
-### 🌍 **Geographic Coverage**
-- All 28 Indian states and 8 Union Territories
-- District-level granularity for precise predictions
-- 700+ districts covered
-
-### 🌦️ **Seasonal Intelligence**
-- **Summer (Zaid)**: March-June
-- **Monsoon (Kharif)**: June-September  
-- **Post-Monsoon**: October-November
-- **Winter (Rabi)**: December-March
+- **Accurate Price Prediction**: Forecasts crop prices based on state, district, season, and crop type using advanced ML models.
+- **Extensive Crop Database**: Covers 9 major crop categories with 200+ commodities, including grains, pulses, vegetables, fruits, spices, and cash crops.
+- **Nationwide Coverage**: Supports all 28 states, 8 union territories, and 700+ districts across India.
+- **Seasonal Intelligence**: Considers seasonal variations (Zaid, Kharif, Post-Monsoon, and Rabi) for precise predictions.
 
 ## 🛠️ Tech Stack
 
@@ -65,13 +36,17 @@ AgroNomics provides a comprehensive web-based ML tool that:
 | **HTML/CSS/JS** | Frontend interface |
 
 ## 🏗️ System Architecture
-
 User Input → Flask Backend → ML Model → Price Prediction → Web Interface
-↓ ↓ ↓ ↓ ↓
-Location, Data Processing Random Forest Predicted Visual Display
-Commodity, & Validation Regression Price & Results
-Season
+- **User Input**: State, District, Crop Category, Crop, Month, Season.
+- **Backend (Flask)**: Processes input and calls the ML model.
+- **ML Model (Random Forest)**: Predicts the crop price using trained data.
+- **Price Prediction**: Returns modal price per kilogram.
+- **Web Interface**: Displays the results in a clean and user-friendly manner. Print Result.
 
+## 🎮 Usage 
+1. Open the homepage.
+2. Select State, District, Crop Category, Crop, Month, and Season.
+3. Click "Predict Price" to view the estimated price (₹/kg).
 
 ## 🚀 Installation & Setup
 
@@ -110,20 +85,6 @@ Season
     ├── LICENSE
     └── README.md
 
-## 🎮 Usage
-
-### Web Interface
-1. Visit the homepage
-2. Select your **State** and **District**
-3. Choose **Commodity Category** and specific **Crop**
-4. Select **Month** and **Season**
-5. Click **"Predict Price"**
-6. View predicted modal price in ₹/quintal
-
-### API Endpoint
-
-**Response:**
-
 ## 🧠 Model Details
 
 - **Algorithm**: Random Forest Regression with fallback prediction system
@@ -135,29 +96,19 @@ Season
 <img width="341" height="148" alt="image" src="https://github.com/user-attachments/assets/9b7e8410-3903-498d-9d90-1db0df808567" />
 <img width="526" height="453" alt="image" src="https://github.com/user-attachments/assets/599efe3f-2da0-4482-abb9-fa417bcd93a6" />
 
-
 ## 📈 Market Impact
-
-### Target Market Size
-- **Global AgriTech**: $30.6B (2024) → $79.7B (2030)
-- **India AgriTech**: $2B (2023) → $24-30B (2027)
-- **Growth Rate**: ~50% CAGR in India
-
-### Benefits
-- ✅ Reduces farmer losses from price volatility
-- ✅ Enables data-driven selling decisions
-- ✅ Decreases dependency on middlemen
-- ✅ Promotes precision agriculture adoption
+- **AgriTech Growth**: $30.6B (2024) → $79.7B (2030) globally, with India projected to reach $24-30B by 2027 (~50% CAGR).
+- **Key Benefits**:
+  - Reduces farmer losses due to price volatility  
+  - Promotes data-driven agriculture  
+  - Decreases dependency on middlemen  
 
 ## 🔧 Troubleshooting
+- **Model Loading Error**: Ensure `model.pkl` and `encoder.pkl` are in the project directory.  
+- **Missing Templates**: All HTML files must be in the `templates/` folder. 
+- **Port in Use**: Stop other processes or use `python app.py --port=5001`.
 
-### Common Issues
-**Model Loading Error**
-**Missing Templates**
-- Ensure all HTML files are in the `templates/` directory
-**Port Already in Use**
-
-
+- 
 ## 👥 Team Celebi
 
 | Name | Role | Contact |
