@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}About - AgroNomics{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h1 class="text-center mb-4">About AgroNomics</h1>
+            
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    <h3 class="text-success">Our Mission</h3>
+                    <p class="lead">Empowering farmers with data-driven insights to make informed decisions about crop pricing and market trends.</p>
+                    
+                    <h3 class="text-success mt-4">The Problem</h3>
+                    <ul>
+                        <li>Farmers suffer losses due to unpredictable crop prices</li>
+                        <li>Lack of forecasting tools tailored to local agriculture</li>
+                        <li>Decisions based on guesswork instead of data</li>
+                    </ul>
+                    
+                    <h3 class="text-success mt-4">Our Solution</h3>
+                    <ul>
+                        <li>Web-based ML tool to forecast crop prices</li>
+                        <li>Uses historical datasets and regression models</li>
+                        <li>Simple interface for easy access by farmers</li>
+                        <li>Predicts crop prices for upcoming periods</li>
+                    </ul>
+                    
+                    <h3 class="text-success mt-4">Technology Stack</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><strong>Python:</strong> Core logic & modeling</li>
+                                <li><strong>Pandas:</strong> Data handling</li>
+                                <li><strong>Scikit-learn:</strong> Machine learning</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><strong>Flask:</strong> Backend API</li>
+                                <li><strong>Bootstrap:</strong> Frontend styling</li>
+                                <li><strong>Matplotlib:</strong> Data visualization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-success mt-4">Team Celebi</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5>Vaibhavi Srivastava</h5>
+                                    <p class="text-muted">ML Developer</p>
+                                    <a href="https://github.com/archangel2006" class="btn btn-sm btn-outline-success">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5>Sangini Garg</h5>
+                                    <p class="text-muted">Web Developer</p>
+                                    <a href="https://github.com/Sanginiux" class="btn btn-sm btn-outline-success">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

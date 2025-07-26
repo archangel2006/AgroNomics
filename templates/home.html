@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section bg-success text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">AgroNomics Crop Price Predictor</h1>
+        <p class="lead">Empowering Farmers with Data-Driven Insights</p>
+        <p>Predict crop prices using advanced machine learning algorithms</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h3 class="mb-0">Crop Price Prediction Form</h3>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="{{ url_for('predict') }}" id="predictionForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="category" class="form-label fw-bold">Category</label>
+                                <select class="form-select" id="category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    {% for category in categories.keys() %}
+                                    <option value="{{ category }}">{{ category }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="crop" class="form-label fw-bold">Crop</label>
+                                <select class="form-select" id="crop" name="crop" required>
+                                    <option value="">Select Crop</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="state" class="form-label fw-bold">State (Indian States)</label>
+                                <select class="form-select" id="state" name="state" required>
+                                    <option value="">Select State</option>
+                                    {% for state in states %}
+                                    <option value="{{ state }}">{{ state }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="district" class="form-label fw-bold">District</label>
+                                <select class="form-select" id="district" name="district" required>
+                                    <option value="">Select District</option>
+                                    <option value="Others">Others (if district not available)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="season" class="form-label fw-bold">Season</label>
+                                <select class="form-select" id="season" name="season" required>
+                                    <option value="">Select Season</option>
+                                    {% for season_key, season_data in seasons.items() %}
+                                    <option value="{{ season_key }}" title="{{ season_data.description }}">
+                                        {{ season_data.name }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                                <div class="form-text">
+                                    <small>
+                                        <strong>Summer:</strong> Mar-Jun (Hot, dry) | 
+                                        <strong>Monsoon:</strong> Jun-Sep (Rainy) | 
+                                        <strong>Post-Monsoon:</strong> Oct-Nov (Moderate) | 
+                                        <strong>Winter:</strong> Dec-Mar (Cool, dry)
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="month" class="form-label fw-bold">Month (Date Picker)</label>
+                                <input type="month" class="form-control" id="month" name="month" required>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg px-5">
+                                Predict Price 🔮
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Season Information Cards -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3 class="text-center mb-4">Indian Agricultural Seasons</h3>
+        </div>
+        {% for season_key, season_data in seasons.items() %}
+        <div class="col-md-3 mb-3">
+            <div class="card h-100 season-card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-success">{{ season_data.name }}</h5>
+                    <p class="card-text">
+                        <strong>Months:</strong><br>
+                        {{ season_data.months | join(', ') }}
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">{{ season_data.description }}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4 text-center">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">📊 Data-Driven</h5>
+                    <p class="card-text">Uses historical datasets and advanced regression models for accurate predictions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">🌾 Farmer-Friendly</h5>
+                    <p class="card-text">Simple interface designed for easy access by farmers across India.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">📈 Seasonal Insights</h5>
+                    <p class="card-text">Accounts for seasonal variations and climate patterns in price predictions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
