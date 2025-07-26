@@ -75,6 +75,9 @@ Season
 
 ## 🚀 Installation & Setup
 
+### Prerequisites:
+- Python 3.11+
+- `pip` (Python package installer)
 
 
 ## 📁 Project Structure
