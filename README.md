@@ -28,7 +28,7 @@ AgroNomics is a web-based machine learning platform that predicts upcoming crop 
 - **Key Benefits**:
   - Reduces farmer losses due to price volatility  
   - Promotes data-driven agriculture  
-  - Decreases dependency on middlemen  
+  - Decreases dependency on middlemen
 
 ---
 ## 🛠️ Tech Stack
@@ -125,9 +125,18 @@ User Input → Flask Backend → ML Model → Price Prediction → Web Interface
 - **Encoding**: Ordinal Encoding for categorical variables
 - **Fallback System**: Rule-based predictions when ML models unavailable
 - **Accuracy**:  ~88% on cleaned dataset (~40k entries)
-- 
+
+## 📊 Model Performance
+
+| Metric | Value  |
+|--------|--------|
+| **MAE**   | 3.25   |
+| **RMSE**  | 5.64   |
+| **R²**    | 0.88   |
+
+**Top Features (by importance):** Crop > Category > State > District > Month > Season
+
 - <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b867ce23-e230-4f34-9f8f-2395b6e5b14f" />
-<img width="1440" height="1080" alt="photo-collage png (9)" src="https://github.com/user-attachments/assets/b02ffce3-fd04-4c03-b7bb-b015c650fbbd" />
 
 ---
 ## 🔧 Troubleshooting
