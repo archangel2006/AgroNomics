@@ -10,7 +10,7 @@ A web-based machine learning application that predicts crop prices to help farme
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 
-
+---
 ## 🎯 Problem 
 Farmers face significant financial losses due to unpredictable crop prices, lack of reliable forecasting tools, and decisions based on guesswork rather than data-driven insights.
 
@@ -23,7 +23,14 @@ AgroNomics is a web-based machine learning platform that predicts upcoming crop 
 - **Nationwide Coverage**: Supports all 28 states, 8 union territories, and 700+ districts across India.
 - **Seasonal Intelligence**: Considers seasonal variations (Zaid, Kharif, Post-Monsoon, and Rabi) for precise predictions.
 
+## 📈 Market Impact
+- **AgriTech Growth**: $30.6B (2024) → $79.7B (2030) globally, with India projected to reach $24-30B by 2027 (~50% CAGR).
+- **Key Benefits**:
+  - Reduces farmer losses due to price volatility  
+  - Promotes data-driven agriculture  
+  - Decreases dependency on middlemen  
 
+---
 ## 🛠️ Tech Stack
 
 | Technology       | Purpose                          |
@@ -36,7 +43,7 @@ AgroNomics is a web-based machine learning platform that predicts upcoming crop 
 | **HTML/CSS/JS**  | Frontend interface               |
 
 - **Dataset**: https://www.kaggle.com/datasets/syedjaferk/agriculture-commodity-data-2019
-- 
+--- 
 
 ## 🚀 Installation & Setup
 
@@ -44,38 +51,58 @@ AgroNomics is a web-based machine learning platform that predicts upcoming crop 
 - Python 3.11+
 - `pip` (Python package installer)
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/AgroNomics.git
+   cd AgroNomics
+2. **Create a Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate       # For Linux/Mac
+   venv\Scripts\activate          # For Windows
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+4. **Add Model Files**
+   Run Agronomics.ipynb
+   Place your model.pkl and encoder.pkl files inside the project directory.
+   (Ensure these files are present for predictions to work.)
+5. **Run the Flask App**
+   python app.py
+Your app will be available at: http://127.0.0.1:5000
+---
 
 ## 📁 Project Structure
-.
-└── AgroNomics/
-    ├── assets/
-    │   ├── agridata.csv   # (original dataset from Kaggle)
-    │   ├── cleaned_agridata.csv   # (cleaned dataset for model building)
-    │   └── crops.docx
-    ├── sample_models #(rough models built)/
-    │   ├── model1
-    │   ├── model2
-    │   ├── model3
-    │   └── delete.py 
-    ├── static   # (frontend styling & logic)/
-    │   ├── css/
-    │   │   └── style.css
-    │   └── js/
-    │       └── script.js
-    ├── templates  # (frontend structure)/
-    │   ├── about.html
-    │   ├── copyright.html
-    │   ├── home.html
-    │   └── result.html
-    ├── requirements.txt
-    ├── AgroNomics.ipynb  # (final model code)
-    ├── model.plk      # (final model)
-    ├── encoding.plk   # (encoding for model)
-    ├── app.py         # (Flask API)
-    ├── LICENSE
-    └── README.md
+        .
+        └── AgroNomics/
+            ├── assets/
+            │   ├── agridata.csv    (original dataset from Kaggle)
+            │   ├── cleaned_agridata.csv   (cleaned dataset for model building)
+            │   └── crops.docx
+            ├── sample_models  (rough models built)/
+            │   ├── model1
+            │   ├── model2
+            │   ├── model3
+            │   └── delete.py 
+            ├── static     (frontend styling & logic)/
+            │   ├── css/
+            │   │   └── style.css
+            │   └── js/
+            │       └── script.js
+            ├── templates   (frontend structure)/
+            │   ├── about.html
+            │   ├── copyright.html
+            │   ├── home.html
+            │   └── result.html
+            ├── requirements.txt
+            ├── AgroNomics.ipynb  (final model code)
+            ├── model.plk      (final model)
+            ├── encoding.plk   (encoding for model)
+            ├── app.py         (Flask API)
+            ├── LICENSE
+            └── README.md
 
-
+---
 ## 🏗️ System Architecture
 User Input → Flask Backend → ML Model → Price Prediction → Web Interface
 - **User Input**: State, District, Crop Category, Crop, Month, Season.
@@ -102,26 +129,22 @@ User Input → Flask Backend → ML Model → Price Prediction → Web Interface
 - <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b867ce23-e230-4f34-9f8f-2395b6e5b14f" />
 <img width="1440" height="1080" alt="photo-collage png (9)" src="https://github.com/user-attachments/assets/b02ffce3-fd04-4c03-b7bb-b015c650fbbd" />
 
-
-## 📈 Market Impact
-- **AgriTech Growth**: $30.6B (2024) → $79.7B (2030) globally, with India projected to reach $24-30B by 2027 (~50% CAGR).
-- **Key Benefits**:
-  - Reduces farmer losses due to price volatility  
-  - Promotes data-driven agriculture  
-  - Decreases dependency on middlemen  
-
+---
 ## 🔧 Troubleshooting
 - **Model Loading Error**: Ensure `model.pkl` and `encoder.pkl` are in the project directory.  
 - **Missing Templates**: All HTML files must be in the `templates/` folder. 
 - **Port in Use**: Stop other processes or use `python app.py --port=5001`.
 
-- 
+---
 ## 👥 Team Celebi
 
 | Name | Role | Contact |
 |------|------|---------|
-| **Vaibhavi Srivastava** | ML Developer |  [GitHub](https://github.com/archangel2006) |
-| **Sangini Garg** | Web Developer | [GitHub](https://github.com/Sanginiux) |
+| **Vaibhavi Srivastava** | ML Developer | [LinkedIn](https://linkedin.com/in/vaibhavi-srivastava-99a572348) • [GitHub](https://github.com/archangel2006) |
+| **Sangini Garg** | Web Developer | [LinkedIn](https://linkedin.com/in/sangini-garg) • [GitHub](https://github.com/Sanginiux) |
+
+
+
 
 
 
