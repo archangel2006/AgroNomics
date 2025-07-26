@@ -29,7 +29,9 @@ AgroNomics is a web-based machine learning platform that predicts upcoming crop 
   - Reduces farmer losses due to price volatility  
   - Promotes data-driven agriculture  
   - Decreases dependency on middlemen
-
+ 
+    
+**Scroll down to see web interface and model details**
 ---
 ## 🛠️ Tech Stack
 
