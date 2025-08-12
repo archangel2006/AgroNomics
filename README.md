@@ -99,7 +99,7 @@ Your app will be available at: http://127.0.0.1:5000
             ├── requirements.txt
             ├── AgroNomics.ipynb  (final model code)
             ├── model.plk      (final model)
-            ├── encoding.plk   (encoding for model)
+            ├── encoder.plk   (encoding for model)
             ├── app.py         (Flask API)
             ├── LICENSE
             └── README.md
@@ -151,8 +151,8 @@ User Input → Flask Backend → ML Model → Price Prediction → Web Interface
 
 | Name | Role | Contact |
 |------|------|---------|
-| **Vaibhavi Srivastava** | ML Developer | [LinkedIn](https://linkedin.com/in/vaibhavi-srivastava-99a572348) • [GitHub](https://github.com/archangel2006) |
-| **Sangini Garg** | Web Developer | [LinkedIn](https://linkedin.com/in/sangini-garg) • [GitHub](https://github.com/Sanginiux) |
+| **Vaibhavi Srivastava** | ML Developer | [GitHub](https://github.com/archangel2006) |
+| **Sangini Garg** | Web Developer |  [GitHub](https://github.com/Sanginiux) |
 
 
 
