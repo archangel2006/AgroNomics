@@ -8,7 +8,7 @@ A web-based machine learning application that predicts crop prices to help farme
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-red)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
-![License](https://img.shields.io/badge/license-Proprietary-red)
+<!-- ![License](https://img.shields.io/badge/license-Proprietary-red) -->
 
 ---
 ## 🎯 Problem 
