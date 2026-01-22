@@ -81,11 +81,6 @@ Your app will be available at: http://127.0.0.1:5000
             │   ├── agridata.csv    (original dataset from Kaggle)
             │   ├── cleaned_agridata.csv   (cleaned dataset for model building)
             │   └── crops.docx
-            ├── sample_models  (rough models built)/
-            │   ├── model1
-            │   ├── model2
-            │   ├── model3
-            │   └── delete.py 
             ├── static     (frontend styling & logic)/
             │   ├── css/
             │   │   └── style.css
